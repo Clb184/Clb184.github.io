@@ -5,15 +5,17 @@
 	</head>
 
 	<body>
-		<h1 align = left> Seihou 2 - Kioh Gyoku Instruction table </h1>
-		Instructions written for my compiler work like:
-		<br>
-		INSNAME par1, par2, par3, etc...
-		<br>
-		<a href="index.html">Return to index</a>.
-		<br>
-		<br>
-		<table bordercolor="black" style="background-color:rgba(156, 160, 156, 0.75);">
+		<div align = center class="titlebox">
+			<h1 class="bordclb"> Seihou 2 - Kioh Gyoku Instruction table </h1>
+		</div>
+		<div class="clbbox">
+			Instructions written for my compiler work like:
+			<br>
+			INSNAME par1, par2, par3, etc...
+			<br>
+			<a href="index.html">Return to index</a>.
+		</div>
+		<table align="center" class="clbins_table">
 			<thead bordercolor="black">
 				<tr bordercolor="black">
 					<th class="id"> ID (Hex) </th>
@@ -51,7 +53,7 @@
 					<td> 0x42 </td>
 					<td> <strong> ANIME </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Create animation with N sprites (a, b, c, d, ... x) and save it to register Reg. </td>
 				</tr>
 				<tr>
 					<td> 0x43 </td>
@@ -111,25 +113,25 @@
 					<td> 0x56 </td>
 					<td> <strong> ATKNP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Create attack thread with subroutine Sub, but not as a child. </td>
 				</tr>
 				<tr>
 					<td> 0x57 </td>
 					<td> <strong> MOV </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Move with speed Spd for T frames. </td>
 				</tr>
 				<tr>
 					<td> 0x58 </td>
 					<td> <strong> ACC </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Move with first speed Spd and add Acc for T frames. </td>
 				</tr>
 				<tr>
 					<td> 0x59 </td>
 					<td> <strong> ROL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Move with speed Spd and add Ang to the direction angle for T frames.</td>
 				</tr>
 				<tr>
 					<td> 0x5a </td>
@@ -177,25 +179,25 @@
 					<td> 0x61 </td>
 					<td> <strong> PMOV </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as MOV, synchronizes child pos with parent's pos. </td>
 				</tr>
 				<tr>
 					<td> 0x62 </td>
 					<td> <strong> PACC </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as ACC, synchronizes child pos with parent's pos. </td>
 				</tr>
 				<tr>
 					<td> 0x63 </td>
 					<td> <strong> PROL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as ROL, synchronizes child pos with parent's pos. </td>
 				</tr>
 				<tr>
 					<td> 0x64 </td>
 					<td> <strong> PNOP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as NOP, synchronizes child pos with parent's pos. </td>
 				</tr>
 				<tr>
 					<td> 0x65 </td>
@@ -237,13 +239,13 @@
 					<td> 0x74 </td>
 					<td> <strong> LLCHARGE </strong> </td>
 					<td>  </td>
-					<td> Put Laser in charge state. </td>
+					<td> Put Long Laser in charge state. </td>
 				</tr>
 				<tr>
 					<td> 0x75 </td>
 					<td> <strong> LLOPEN </strong> </td>
 					<td>  </td>
-					<td> Open Laser with width W. Open speed is devined by Reg3. </td>
+					<td> Open Long Laser with width W. Open speed is defined by Reg3. </td>
 				</tr>
 				<tr>
 					<td> 0x76 </td>
@@ -297,31 +299,31 @@
 					<td> 0x90 </td>
 					<td> <strong> TALKMSG </strong> </td>
 					<td> </td>
-					<td> Unused. </td>
+					<td> Unused. Put message Msg. Unknown if is in the final release. </td>
 				</tr>
 				<tr>
 					<td> 0x91 </td>
 					<td> <strong> TALKKEY </strong> </td>
 					<td> </td>
-					<td> Unused. </td>
+					<td> Unused. Wait for key input. Unknown if is in the final release. </td>
 				</tr>
 				<tr>
 					<td> 0x92 </td>
 					<td> <strong> TALKNEWL </strong> </td>
 					<td> </td>
-					<td> Unused. </td>
+					<td> Unused. Request new line. Unknown if is in the final release. </td>
 				</tr>
 				<tr>
 					<td> 0x93 </td>
 					<td> <strong> TALKWAIT </strong> </td>
 					<td> </td>
-					<td> Unused. </td>
+					<td> Unused. Dialogue wait. Unknown if is in the final release. </td>
 				</tr>
 				<tr>
 					<td> 0xa0 </td>
 					<td> <strong> TASK </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Create Animation Task at X, Y with subroutine Sub. </td>
 				</tr>
 				<tr>
 					<td> 0xa1 </td>
@@ -351,7 +353,7 @@
 					<td> 0xc3 </td>
 					<td> <strong> MOVR </strong> </td>
 					<td>  </td>
-					<td> Unused. </td>
+					<td> Unused. Unknown if is in the final release. </td>
 				</tr>
 				<tr>
 					<td> 0xc4 </td>
@@ -393,7 +395,7 @@
 					<td> 0xcc </td>
 					<td> <strong> EXIT </strong> </td>
 					<td>  </td>
-					<td> Exit procedure. </td>
+					<td> Exit subroutine. </td>
 				</tr>
 				<tr>
 					<td> 0xcd </td>
@@ -459,7 +461,7 @@
 					<td> 0xd8 </td>
 					<td> <strong> RND </strong> </td>
 					<td>  </td>
-					<td> Push(rnd % Pop(0)). </td>
+					<td> Does Push(rnd % Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd9 </td>
