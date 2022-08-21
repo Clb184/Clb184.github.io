@@ -1,7 +1,7 @@
 
 body
 {
-		background-image: url(BGCity.bmp);
+	background-image: url(BGCity.bmp);
 }
 
 tr
@@ -35,7 +35,6 @@ td
 	font-family:"Arial";
 	width: 400px;
 	background-color: rgba(156, 160, 156, 0.6);
-	//border: 3px solid black;
 	margin: 20px auto;
 }
 
