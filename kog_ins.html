@@ -1,0 +1,521 @@
+<html>
+	<head>
+		<title> Seihou 2 - Kioh Gyoku Instructions </title>
+		<link rel="stylesheet" href="kog_ins_style.css" />
+	</head>
+
+	<body>
+		<h1 align = left> Seihou 2 - Kioh Gyoku Instruction table </h1>
+		Instructions written for my compiler work like:
+		<br>
+		INSNAME par1, par2, par3, etc...
+		<br>
+		<a href="index.html">Return to index</a>.
+		<br>
+		<br>
+		<table bordercolor="black" style="background-color:rgba(156, 160, 156, 0.75);">
+			<thead bordercolor="black">
+				<tr bordercolor="black">
+					<th class="id"> ID (Hex) </th>
+					<th class="ins"> Name </th>
+					<th class="param"> Parameters </th>
+					<th class="desc"> Description </th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td> 0x30 </td>
+					<td> <strong> NOP </strong> </td>
+					<td> ui16 <strong> T</strong> </td>
+					<td> Wait T frames. </td>
+				</tr>
+				<tr>
+					<td> 0x31 </td>
+					<td> <strong> SET </strong> </td>
+					<td> i16 <strong> X</strong>, i16 <strong> Y</strong>, sub <strong> Sub</strong> </td>
+					<td> Create enemy with subroutine <strong> Sub</strong> at X, Y coordinates.</td>
+				</tr>
+				<tr>
+					<td> 0x40 </td>
+					<td> <strong> LOAD </strong> </td>
+					<td> ui8 <strong> Reg</strong>, ui8 <strong> Slot</strong>, string <strong> File</strong> </td>
+					<td> Load bmp file <strong> File</strong> on register <strong> Reg</strong>, slot <strong> Slot</strong>.</td>
+				</tr>
+				<tr>
+					<td> 0x41 </td>
+					<td> <strong> RECT </strong> </td>
+					<td> ui8 Reg, i16 X1, i16 Y1, i16 X2, i16 Y2 </td>
+					<td> Get sprite from X1, Y1 with width X2 - X1 and height Y2 - Y1 and save it on register Reg.</td>
+				</tr>
+				<tr>
+					<td> 0x42 </td>
+					<td> <strong> ANIME </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x43 </td>
+					<td> <strong> LOAD2 </strong> (Obsolete) </td>
+					<td>  ui8 <strong> Reg</strong>, ui8 <strong> Slot</strong>, string <strong> File</strong> </td>
+					<td> Same as <strong>LOAD</strong>, unused.</td>
+				</tr>
+				<tr>
+					<td> 0x44 </td>
+					<td> <strong> LOADEX </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x45 </td>
+					<td> <strong> STOP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x50 </td>
+					<td> <strong> CALL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x51 </td>
+					<td> <strong> ATK </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x52 </td>
+					<td> <strong> ESET </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x53 </td>
+					<td> <strong> RET </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x54 </td>
+					<td> <strong> ANM </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x55 </td>
+					<td> <strong> FATK </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x56 </td>
+					<td> <strong> ATKNP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x57 </td>
+					<td> <strong> MOV </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x58 </td>
+					<td> <strong> ACC </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x59 </td>
+					<td> <strong> ROL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x5a </td>
+					<td> <strong> WAITATOBJ </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x5b </td>
+					<td> <strong> PSE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x5c </td>
+					<td> <strong> KILL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x5d </td>
+					<td> <strong> MDMG </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x5e </td>
+					<td> <strong> CHILD </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x5f </td>
+					<td> <strong> CHGTASK </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x60 </td>
+					<td> <strong> PARENT </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x61 </td>
+					<td> <strong> PMOV </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x62 </td>
+					<td> <strong> PACC </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x63 </td>
+					<td> <strong> PROL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x64 </td>
+					<td> <strong> PNOP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x65 </td>
+					<td> <strong> ATK2 </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x66 </td>
+					<td> <strong> EFC </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x70 </td>
+					<td> <strong> TAMA </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x71 </td>
+					<td> <strong> LASER </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x72 </td>
+					<td> <strong> DEGE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x73 </td>
+					<td> <strong> DEGS </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x74 </td>
+					<td> <strong> LLCHARGE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x75 </td>
+					<td> <strong> LLOPEN </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x76 </td>
+					<td> <strong> LLCLOSE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x77 </td>
+					<td> <strong> HLASER </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x78 </td>
+					<td> <strong> LSPHERE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x79 </td>
+					<td> <strong> RLASER </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x7a </td>
+					<td> <strong> CROSS </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x7b </td>
+					<td> <strong> FLOWER </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x7c </td>
+					<td> <strong> GFIRE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x7d </td>
+					<td> <strong> IONRING </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x90 </td>
+					<td> <strong> TALKMSG </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x91 </td>
+					<td> <strong> TALKKEY </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x92 </td>
+					<td> <strong> TALKNEWL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0x93 </td>
+					<td> <strong> TALKWAIT </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xa0 </td>
+					<td> <strong> TASK </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xa1 </td>
+					<td> <strong> TEXMODE </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc0 </td>
+					<td> <strong> PUSHR </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc1 </td>
+					<td> <strong> POPR </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc2 </td>
+					<td> <strong> MOVC </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc3 </td>
+					<td> <strong> MOVR </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc4 </td>
+					<td> <strong> PUSHC </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc5 </td>
+					<td> <strong> TJMP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc6 </td>
+					<td> <strong> FJMP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xc7 </td>
+					<td> <strong> JMP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xca </td>
+					<td> <strong> OJMP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xcb </td>
+					<td> <strong> AJMP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xcc </td>
+					<td> <strong> EXIT </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xcd </td>
+					<td> <strong> LPOP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xce </td>
+					<td> <strong> LJMP </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd0 </td>
+					<td> <strong> ADD </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd1 </td>
+					<td> <strong> SUB </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd2 </td>
+					<td> <strong> MUL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd3 </td>
+					<td> <strong> DIV </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd4 </td>
+					<td> <strong> MOD </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd5 </td>
+					<td> <strong> NEG </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd6 </td>
+					<td> <strong> SINL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd7 </td>
+					<td> <strong> COSL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd8 </td>
+					<td> <strong> RND </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xd9 </td>
+					<td> <strong> ATAN </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xda </td>
+					<td> <strong> EQUAL </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xdb </td>
+					<td> <strong> NOTEQ </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xdc </td>
+					<td> <strong> GREAT </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xdd </td>
+					<td> <strong> LESS </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xde </td>
+					<td> <strong> GREATEQ </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xdf </td>
+					<td> <strong> LESSEQ </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xe0 </td>
+					<td> <strong> MAX </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+				<tr>
+					<td> 0xe1 </td>
+					<td> <strong> MIN </strong> </td>
+					<td>  </td>
+					<td> </td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

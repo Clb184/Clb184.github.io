@@ -1,0 +1,48 @@
+
+body
+{
+		background-image: url(BGCity.bmp);
+}
+
+tr
+{
+	border: 1px solid black;
+}
+
+
+th
+{
+	border: 16px solid black;
+}
+td
+{
+	border: 1px solid black;
+}
+
+.id
+{
+	border: 1px solid black;
+	width: 100px;
+	height: 20px;
+}
+
+.ins
+{
+	border: 1px solid black;
+	width: 110px;
+	height: 20px;
+}
+
+.param
+{
+	border: 1px solid black;
+	width: 250px;
+	height: 20px;
+}
+
+.desc
+{
+	border: 1px solid black;
+	width: 500px;
+	height: 20px;
+}
