@@ -6,18 +6,22 @@
 
 	<body>
 		<div align = center class="titlebox">
-			<h1 class="bordclb"> Seihou 2 - Kioh Gyoku Instruction table </h1>
+			<h1 class="bordclb"> Seihou 2 - Kioh Gyoku SCL Instruction table </h1>
 		</div>
-		<div class="clbbox">
-			Instructions written for my compiler work like:
-			<br>
-			INSNAME par1, par2, par3, etc...
-			<br>
-			<a href="index.html">Return to index</a>.
+		<div align="center">
+			<div class="clbbox">
+				Kioh Gyoku's script files have the SCL (Script), ECL (Enemy) and TCL (Tama or bullet) (Control Language) in the same file, unlike Shuusou Gyoku's.
+				<br>
+				Instructions written for my encoder must be written like:
+				<br>
+				INSNAME par1, par2, par3, etc...
+				<br>
+				<a href="index.html">Return to index</a>.
+			</div>
 		</div>
 		<table align="center" class="clbins_table">
-			<thead bordercolor="black">
-				<tr bordercolor="black">
+			<thead>
+				<tr>
 					<th class="id"> ID (Hex) </th>
 					<th class="ins"> Name </th>
 					<th class="param"> Parameters </th>
@@ -34,8 +38,8 @@
 				<tr>
 					<td> 0x31 </td>
 					<td> <strong> SET </strong> </td>
-					<td> i16 <strong> X</strong>, i16 <strong> Y</strong>, sub <strong> Sub</strong> </td>
-					<td> Create enemy with subroutine <strong> Sub</strong> at X, Y coordinates.</td>
+					<td> i16 <strong>X</strong>, i16 <strong> Y</strong>, sub <strong> Sub</strong> </td>
+					<td> Create enemy with subroutine <code>Sub</code> at <code>x</code>, <code>y</code> coordinates.</td>
 				</tr>
 				<tr>
 					<td> 0x40 </td>
