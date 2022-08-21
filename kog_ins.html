@@ -63,49 +63,49 @@
 					<td> 0x44 </td>
 					<td> <strong> LOADEX </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Load tga file File. </td>
 				</tr>
 				<tr>
 					<td> 0x45 </td>
 					<td> <strong> STOP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Stop animation. </td>
 				</tr>
 				<tr>
 					<td> 0x50 </td>
 					<td> <strong> CALL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Call subroutine Sub. </td>
 				</tr>
 				<tr>
 					<td> 0x51 </td>
 					<td> <strong> ATK </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Create Attack thread on enm_x + X, enm_y + Y with subroutine Sub. </td>
 				</tr>
 				<tr>
 					<td> 0x52 </td>
 					<td> <strong> ESET </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Set subroutine to Sub.</td>
 				</tr>
 				<tr>
 					<td> 0x53 </td>
 					<td> <strong> RET </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Return from subroutine and pop onto reg Reg (Need to do research.).</td>
 				</tr>
 				<tr>
 					<td> 0x54 </td>
 					<td> <strong> ANM </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Set Animation patern to Ptn with speed Spd. </td>
 				</tr>
 				<tr>
 					<td> 0x55 </td>
 					<td> <strong> FATK </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Set subroutine Sub as attack on death. </td>
 				</tr>
 				<tr>
 					<td> 0x56 </td>
@@ -135,43 +135,43 @@
 					<td> 0x5a </td>
 					<td> <strong> WAITATOBJ </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Wait until attack thread finishes. </td>
 				</tr>
 				<tr>
 					<td> 0x5b </td>
 					<td> <strong> PSE </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Play Sound of id SfxID. </td>
 				</tr>
 				<tr>
 					<td> 0x5c </td>
 					<td> <strong> KILL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Kill enemy. </td>
 				</tr>
 				<tr>
 					<td> 0x5d </td>
 					<td> <strong> MDMG </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Do n damage to the Madness Gauge. </td>
 				</tr>
 				<tr>
 					<td> 0x5e </td>
 					<td> <strong> CHILD </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Create child with id ID and subroutine Sub. </td>
 				</tr>
 				<tr>
 					<td> 0x5f </td>
 					<td> <strong> CHGTASK </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Change child task to Sub. </td>
 				</tr>
 				<tr>
 					<td> 0x60 </td>
 					<td> <strong> PARENT </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Push content of parent's reg Reg onto the stack. </td>
 				</tr>
 				<tr>
 					<td> 0x61 </td>
@@ -201,121 +201,121 @@
 					<td> 0x65 </td>
 					<td> <strong> ATK2 </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as ATK, but you can give an extra parameter that is copied onto Reg27. </td>
 				</tr>
 				<tr>
 					<td> 0x66 </td>
 					<td> <strong> EFC </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Create effect with type Type. There are 2 types: Damage particles (0) and Smoke particles (1, 2). </td>
 				</tr>
 				<tr>
 					<td> 0x70 </td>
 					<td> <strong> TAMA </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Shoot bullet. </td>
 				</tr>
 				<tr>
 					<td> 0x71 </td>
 					<td> <strong> LASER </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Shoot laser. </td>
 				</tr>
 				<tr>
 					<td> 0x72 </td>
 					<td> <strong> DEGE </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Aim to self angle. </td>
 				</tr>
 				<tr>
 					<td> 0x73 </td>
 					<td> <strong> DEGS </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Aim to player. </td>
 				</tr>
 				<tr>
 					<td> 0x74 </td>
 					<td> <strong> LLCHARGE </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Put Laser in charge state. </td>
 				</tr>
 				<tr>
 					<td> 0x75 </td>
 					<td> <strong> LLOPEN </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Open Laser with width W. Open speed is devined by Reg3. </td>
 				</tr>
 				<tr>
 					<td> 0x76 </td>
 					<td> <strong> LLCLOSE </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Close Long Laser.</td>
 				</tr>
 				<tr>
 					<td> 0x77 </td>
 					<td> <strong> HLASER </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Shoot Homing Laser. </td>
 				</tr>
 				<tr>
 					<td> 0x78 </td>
 					<td> <strong> LSPHERE </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Shoot Lightning Sphere. </td>
 				</tr>
 				<tr>
 					<td> 0x79 </td>
 					<td> <strong> RLASER </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Shoot Round Laser. </td>
 				</tr>
 				<tr>
 					<td> 0x7a </td>
 					<td> <strong> CROSS </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Shoot Cross. </td>
 				</tr>
 				<tr>
 					<td> 0x7b </td>
 					<td> <strong> FLOWER </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Shoot Flower. </td>
 				</tr>
 				<tr>
 					<td> 0x7c </td>
 					<td> <strong> GFIRE </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Shoot Gates' Fire. </td>
 				</tr>
 				<tr>
 					<td> 0x7d </td>
 					<td> <strong> IONRING </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Shoot Ion Ring. </td>
 				</tr>
 				<tr>
 					<td> 0x90 </td>
 					<td> <strong> TALKMSG </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Unused. </td>
 				</tr>
 				<tr>
 					<td> 0x91 </td>
 					<td> <strong> TALKKEY </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Unused. </td>
 				</tr>
 				<tr>
 					<td> 0x92 </td>
 					<td> <strong> TALKNEWL </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Unused. </td>
 				</tr>
 				<tr>
 					<td> 0x93 </td>
 					<td> <strong> TALKWAIT </strong> </td>
-					<td>  </td>
 					<td> </td>
+					<td> Unused. </td>
 				</tr>
 				<tr>
 					<td> 0xa0 </td>
@@ -327,193 +327,193 @@
 					<td> 0xa1 </td>
 					<td> <strong> TEXMODE </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Set Texture mode: Single, Double, . </td>
 				</tr>
 				<tr>
 					<td> 0xc0 </td>
 					<td> <strong> PUSHR </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Push Register Reg onto the stack. </td>
 				</tr>
 				<tr>
 					<td> 0xc1 </td>
 					<td> <strong> POPR </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Pop onto Register Reg. </td>
 				</tr>
 				<tr>
 					<td> 0xc2 </td>
 					<td> <strong> MOVC </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Set register Reg to Const. </td>
 				</tr>
 				<tr>
 					<td> 0xc3 </td>
 					<td> <strong> MOVR </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Unused. </td>
 				</tr>
 				<tr>
 					<td> 0xc4 </td>
 					<td> <strong> PUSHC </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Push Constant Const. </td>
 				</tr>
 				<tr>
 					<td> 0xc5 </td>
 					<td> <strong> TJMP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Pop and Jump to label .lab if True. </td>
 				</tr>
 				<tr>
 					<td> 0xc6 </td>
 					<td> <strong> FJMP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Pop and Jump to label .lab if False. </td>
 				</tr>
 				<tr>
 					<td> 0xc7 </td>
 					<td> <strong> JMP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Jump to label .lab . </td>
 				</tr>
 				<tr>
 					<td> 0xca </td>
 					<td> <strong> OJMP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as TJMP, but also pushes True onto the stack. </td>
 				</tr>
 				<tr>
 					<td> 0xcb </td>
 					<td> <strong> AJMP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Same as FJMP, but also pushes False onto the stack. </td>
 				</tr>
 				<tr>
 					<td> 0xcc </td>
 					<td> <strong> EXIT </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Exit procedure. </td>
 				</tr>
 				<tr>
 					<td> 0xcd </td>
 					<td> <strong> LPOP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Pop to use in loop. </td>
 				</tr>
 				<tr>
 					<td> 0xce </td>
 					<td> <strong> LJMP </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Jump to label .lab if constant popped by LPOP is 0. </td>
 				</tr>
 				<tr>
 					<td> 0xd0 </td>
 					<td> <strong> ADD </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) + Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd1 </td>
 					<td> <strong> SUB </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) - Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd2 </td>
 					<td> <strong> MUL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) * Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd3 </td>
 					<td> <strong> DIV </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) / Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd4 </td>
 					<td> <strong> MOD </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) % Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd5 </td>
 					<td> <strong> NEG </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(-(Pop(0))). </td>
 				</tr>
 				<tr>
 					<td> 0xd6 </td>
 					<td> <strong> SINL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(sin(Pop(1)) * Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd7 </td>
 					<td> <strong> COSL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(cos(Pop(1)) * Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd8 </td>
 					<td> <strong> RND </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Push(rnd % Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xd9 </td>
 					<td> <strong> ATAN </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(atan(Pop(1), Pop(0))). </td>
 				</tr>
 				<tr>
 					<td> 0xda </td>
 					<td> <strong> EQUAL </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) == Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xdb </td>
 					<td> <strong> NOTEQ </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) != Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xdc </td>
 					<td> <strong> GREAT </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) > Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xdd </td>
 					<td> <strong> LESS </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) < Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xde </td>
 					<td> <strong> GREATEQ </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) >= Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xdf </td>
 					<td> <strong> LESSEQ </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(Pop(1) <= Pop(0)). </td>
 				</tr>
 				<tr>
 					<td> 0xe0 </td>
 					<td> <strong> MAX </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(max(Pop(1), Pop(0))). </td>
 				</tr>
 				<tr>
 					<td> 0xe1 </td>
 					<td> <strong> MIN </strong> </td>
 					<td>  </td>
-					<td> </td>
+					<td> Does Push(min(Pop(1), Pop(0))). </td>
 				</tr>
 			</tbody>
 		</table>
